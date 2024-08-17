@@ -1,0 +1,140 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex; /* Thêm flex để body luôn chiếm hết chiều cao màn hình */
+    flex-direction: column; /* Sắp xếp các phần tử con theo chiều dọc */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+header .logo {
+    flex: 1;
+}
+
+header .option {
+    flex: 7;
+    display: block;
+}
+
+header .option a {
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex: 1; /* Thêm flex: 1 để container chiếm không gian còn lại của body */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    flex: 1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+.menu ul li:hover {
+    background-color: gray;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px; /* Thêm khoảng cách từ cạnh trái */
+    padding: 10px; /* Thêm khoảng cách cho tất cả các cạnh */
+    box-sizing: border-box;
+}
+
+.maincontent {
+    flex: 7;
+    padding: 20px;
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu của nội dung chính chiếm hết màn hình */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Màu nền cho các hàng lẻ */
+}
+
+table a {
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 15px;
+    transition-duration: 0.4s;
+    text-align: center;
+    border: 2px solid #333;
+    margin: 4px 2px;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Đảm bảo footer luôn nằm ở cuối màn hình */
+}
